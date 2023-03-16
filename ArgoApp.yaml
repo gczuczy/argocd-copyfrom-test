@@ -11,13 +11,13 @@ spec:
   project: default
   sources:
     - ref: envspec
-      repoURL: https://github.com/gczuczy/argocd-copyfrom-test.git
-      targetRevision: dev
+      repoURL: https://github.com/gczuczy/argocd-copyfrom-test-envs.git
+      targetRevision: main
     - repoURL: https://github.com/gczuczy/argocd-copyfrom-test.git
       targetRevision: main
       path: ./
       from:
-        - sourcePath: "$envspec/configmap.yaml"
+        - sourcePath: "$envspec/dev/configmap.yaml"
           destinationPath: configmap.yaml
   syncPolicy:
     syncOptions:

@@ -17,8 +17,7 @@ spec:
       targetRevision: main
       path: ./
       from:
-        - ref: $envspec
-          sourcePath: configmap.yaml
+        - sourcePath: "$envspec/configmap.yaml"
           destinationPath: configmap.yaml
   syncPolicy:
     syncOptions:

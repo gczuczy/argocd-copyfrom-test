@@ -6,7 +6,7 @@ metadata:
   name: copyfrom-multibranch-test
 spec:
   destination:
-    namespace: test
+    namespace: copyfrom-test
     server: https://kubernetes.default.svc
   project: default
   sources:
